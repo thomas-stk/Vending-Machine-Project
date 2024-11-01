@@ -32,7 +32,7 @@ def vending_machine():
         while True:
             try:
                 money = float(input("\nEnter an amount of money: £"))
-                if 0 < money < 100:
+                if 0 < money <= 100:
                     print(f"Current balance: £{money:.2f}")
                 elif money > 100:
                     print("\nThe limit is £100. Please try again.") 
